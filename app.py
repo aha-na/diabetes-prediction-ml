@@ -1,3 +1,10 @@
+import subprocess
+import sys
+
+try:
+    import altair
+except:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "altair"])
 import os
 
 if not os.path.exists("model.pkl"):
