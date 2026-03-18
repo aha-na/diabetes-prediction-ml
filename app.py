@@ -40,3 +40,4 @@ if st.button("Predict"):
         st.error(" High chance of Diabetes!")
     else:
         st.success("Low chance of Diabetes")
+# redeploy trigger
