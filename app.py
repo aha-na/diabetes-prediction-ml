@@ -1,23 +1,17 @@
-import subprocess
-import sys
-
-try:
-    import altair
-except:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "altair"])
-import os
-
-if not os.path.exists("model.pkl"):
-    import train_model
 import streamlit as st
 import numpy as np
 import pickle
+import os
+
+# Train model if not exists
+if not os.path.exists("model.pkl"):
+    import train_model
 
 # Load model & scaler
 model = pickle.load(open("model.pkl", "rb"))
 scaler = pickle.load(open("scaler.pkl", "rb"))
 
-st.title("🩺 Diabetes Prediction App")
+st.title(" Diabetes Prediction App")
 
 st.write("Enter patient details:")
 
