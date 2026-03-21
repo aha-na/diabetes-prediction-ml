@@ -1,21 +1,66 @@
-# 🩺 Diabetes Prediction ML App
+# 🩺 Diabetes Prediction Web App
 
-A machine learning web app that predicts whether a person has diabetes based on medical inputs.
+This project is a **Machine Learning web application** that predicts whether a person is likely to have diabetes based on medical input data.
 
-## 🚀 Features
-- Logistic Regression model
-- Data preprocessing & scaling
-- Streamlit interactive web app
+The app is built using **Python, Scikit-learn, and Streamlit** and deployed online for interactive use.
 
-## 🧠 Tech Stack
-- Python
-- Scikit-learn
-- Pandas
-- Streamlit
+---
 
-## ▶️ How to Run
+## 🚀 Live Demo
+
+Try the app here:
+
+👉 https://diabetes-prediction-ml-bkzfqtpeyusejqsbzceevh.streamlit.app/
+
+---
+
+## 💻 GitHub Repository
+
+Source code available here:
+
+👉 https://github.com/aha-na/diabetes-prediction-ml
+
+---
+
+## 📊 Features
+
+- Predicts diabetes risk based on medical parameters
+- Interactive user interface
+- Real-time predictions
+- Automatic model training if model file is missing
+- Deployed web application
+
+---
+
+## 🧠 Machine Learning Model
+
+The model uses:
+
+- **Logistic Regression**
+- **Scikit-learn**
+- Data preprocessing and scaling
+
+Dataset used:
+
+**Pima Indians Diabetes Dataset**
+
+---
+
+## 🧪 Input Parameters
+
+The app takes the following inputs:
+
+- Pregnancies
+- Glucose Level
+- Blood Pressure
+- Skin Thickness
+- Insulin
+- BMI
+- Diabetes Pedigree Function
+- Age
+
+---
+
 
 ```bash
-pip install -r requirements.txt
-python train_model.py
-python -m streamlit run app.py
+git clone https://github.com/aha-na/diabetes-prediction-ml.git
